@@ -12,6 +12,8 @@ public class Service {
     
     public static let shared = Service()
     
+    private init() {}
+    
     public func fetchCatData<T: Codable>(urlString: String, completion: @escaping (T?) -> Void) {
         
         guard let urlObject = URL(string: urlString) else {
