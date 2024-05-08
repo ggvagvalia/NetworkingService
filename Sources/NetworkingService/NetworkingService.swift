@@ -8,9 +8,9 @@
 import Foundation
 
 
-public class Service {
+public class NetworkingService {
     
-    public static let shared = Service()
+    public static let shared = NetworkingService()
     
     private init() {}
     
