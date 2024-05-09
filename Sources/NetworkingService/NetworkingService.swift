@@ -14,7 +14,7 @@ public class NetworkingService {
     
     private init() {}
     
-    public func fetchCatData<T: Codable>(urlString: String, completion: @escaping (T?) -> Void) {
+    public func fetchCatData<T: Decodable>(urlString: String, completion: @escaping (T?) -> Void) {
         
         guard let urlObject = URL(string: urlString) else {
             print("no url")
